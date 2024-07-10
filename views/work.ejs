@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    
+    <!-- title of site -->
+    <title><%= title %></title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="/logo/favicon.png"/>
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <!--flat icon css-->
+    <link rel="stylesheet" href="/css/flaticon.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="/css/animate.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="/css/bootsnav.css">    
+    
+    <!--style.css-->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!--responsive.css-->
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+</head>
+
+<body>
+    <%- include('_header') %>
+
+    <!--portfolio start -->
+    <section id="portfolio" class="portfolio">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="portfolio-details">
+            <div class="section-heading text-center">
+                <h2>Portfolio</h2>
+            </div>
+            
+            <div class="container">
+                <div class="portfolio-content">
+                    <div class="isotope">
+                        <div class="row">
+                            <% portfolios.forEach(portfolio => { %>
+                                <div class="col-sm-4">
+                                    <div class="item">
+                                        <a href="/project/<%= portfolio._id %>"> <!-- Added link to project details -->
+                                            <img src="/images/portfolio/<%= portfolio.image %>" alt="<%= portfolio.title %>"/>
+                                            <div class="isotope-overlay">
+                                                <%= portfolio.title %>
+                                            </div><!-- /.isotope-overlay -->
+                                        </a>
+                                    </div><!-- /.item -->
+                                </div><!-- /.col -->
+                            <% }); %>
+                        </div><!-- /.row -->
+                    </div><!--/.isotope-->
+                </div><!--/.portfolio-content-->
+            </div><!--/.container-->
+        </div><!--/.portfolio-details-->
+    </section><!--/.portfolio-->
+    <!--portfolio end -->
+
+    <%- include('_footer') %>
+        
+    <script src="assets/js/jquery.js"></script>
+    
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+    <!--bootstrap.min.js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- bootsnav js -->
+    <script src="assets/js/bootsnav.js"></script>
+    
+    <!-- jquery.sticky.js -->
+    <script src="assets/js/jquery.sticky.js"></script>
+    
+    <!-- for progress bar start-->
+
+    <!-- progressbar js -->
+    <script src="assets/js/progressbar.js"></script>
+
+    <!-- appear js -->
+    <script src="assets/js/jquery.appear.js"></script>
+
+    <!-- for progress bar end -->
+
+    <!--owl.carousel.js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <!--Custom JS-->
+    <script src="assets/js/custom.js"></script>
+    
+</body>
+
+</html>

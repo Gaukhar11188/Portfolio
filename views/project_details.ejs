@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+    <!-- Title of Site -->
+    <title><%= title %></title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="/logo/favicon.png"/>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootsnav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <%- include('_header') %>
+
+    <!-- Project Details -->
+    <section id="project-details" class="project-details">
+        <br>
+			<br>
+			<br>
+			<br>
+            <br>
+            <br>
+			
+        <div class="section-heading text-center">
+            <h2><%= portfolio.title %></h2> 
+        </div>
+        <div class="container">
+            <div class="project-content">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-5 col-sm-6">
+                        <div class="project-image">
+                            <!-- Fixed src attribute -->
+                            <img src="/images/portfolio/<%= portfolio.image %>" width="500" height="500" alt="<%= portfolio.title %>" />
+                        </div>
+                    </div><!--/.col-->
+                    <div class="col-md-offset-1 col-md-5 col-sm-6">
+                        <div class="project-details-info">
+                            <h1><%= portfolio.title %></h1>
+                            <br>
+                            <br>
+                            <br>
+                            <p><%= portfolio.description %></p>
+                        </div>
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.project-content-->
+        </div><!--/.container-->
+    </section><!--/.project-details-->
+
+    <!-- Footer -->
+    <%- include('_footer') %>
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
